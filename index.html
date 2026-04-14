@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Sheetal Talekar | Gynecologist & Obstetrician – Vapi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  --navy:#1B4F8A;--navy-dark:#0D2B4E;--navy-light:#2E6FBF;
+  --gold:#E8941A;--gold-light:#F5A93B;
+  --teal:#4ECDC4;--teal-light:#7EDDD8;
+  --bg:#F0F6FF;--bg2:#F8FAFC;--white:#FFFFFF;
+  --dark:#1A2B4A;--mid:#4A5568;--light:#718096;
+  --border:#E2E8F0;--success:#27AE60;--danger:#E74C3C;
+  --shadow:0 4px 20px rgba(27,79,138,.1);
+  --shadow-lg:0 12px 40px rgba(27,79,138,.18);
+  --radius:12px;--radius-lg:20px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--dark);background:var(--white);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+ul{list-style:none}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:50px;font-weight:600;font-size:.95rem;cursor:pointer;border:none;transition:all .3s ease}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-primary:hover{background:var(--navy-light);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 25px rgba(232,148,26,.35)}
+.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.btn-outline:hover{background:var(--navy);color:#fff}
+.btn-sm{padding:8px 20px;font-size:.85rem}
+.btn-danger{background:var(--danger);color:#fff}
+.btn-danger:hover{background:#c0392b}
+.section{padding:80px 0}
+.section-alt{background:var(--bg)}
+.section-title{font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--navy);margin-bottom:12px}
+.section-sub{color:var(--mid);font-size:1.05rem;margin-bottom:48px;max-width:580px}
+.tag{display:inline-block;background:rgba(27,79,138,.1);color:var(--navy);padding:6px 16px;border-radius:50px;font-size:.8rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:16px}
+.card{background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:32px;transition:transform .3s ease,box-shadow .3s ease}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+nav.scrolled{box-shadow:var(--shadow)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-logo-icon{width:44px;height:44px;border-radius:12px;overflow:hidden;border:2px solid var(--navy);flex-shrink:0}
+.nav-logo-icon img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.nav-logo-text{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--navy);line-height:1.2}
+.nav-logo-sub{font-size:.72rem;color:var(--mid);font-family:'Inter',sans-serif;font-weight:400}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{padding:8px 14px;border-radius:8px;font-size:.9rem;font-weight:500;color:var(--mid);transition:all .2s}
+.nav-links a:hover,.nav-links a.active{background:var(--bg);color:var(--navy)}
+.nav-cta{margin-left:12px;color:#fff!important}
+.nav-cta:hover{color:#fff!important;background:var(--navy-light)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger span{width:24px;height:2px;background:var(--navy);border-radius:2px;transition:all .3s}
+/* HERO */
+#page-home{padding-top:72px}
+.hero{min-height:92vh;display:flex;align-items:center;background:linear-gradient(135deg,#E8F0FB 0%,#F0F6FF 50%,#EBF8F7 100%);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-100px;right:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(78,205,196,.15) 0%,transparent 70%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-80px;left:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(27,79,138,.08) 0%,transparent 70%);pointer-events:none}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:80px 0}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(27,79,138,.08);border:1px solid rgba(27,79,138,.15);color:var(--navy);padding:8px 18px;border-radius:50px;font-size:.82rem;font-weight:600;margin-bottom:24px}
+.hero-badge i{color:var(--gold)}
+.hero h1{font-family:'Playfair Display',serif;font-size:3.2rem;line-height:1.15;color:var(--navy);margin-bottom:20px}
+.hero h1 span{color:var(--gold)}
+.hero-desc{color:var(--mid);font-size:1.05rem;line-height:1.8;margin-bottom:36px}
+.hero-stats{display:flex;gap:32px;margin-bottom:40px}
+.hero-stat-num{font-size:2rem;font-weight:800;color:var(--navy)}
+.hero-stat-label{font-size:.8rem;color:var(--mid);font-weight:500}
+.hero-buttons{display:flex;gap:16px;flex-wrap:wrap}
+.hero-img-wrap{position:relative}
+.hero-img-card{background:linear-gradient(145deg,var(--navy),var(--navy-light));border-radius:var(--radius-lg);padding:40px;text-align:center;color:#fff;position:relative;overflow:hidden;min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.hero-img-card::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:rgba(255,255,255,.06);border-radius:50%}
+.hero-img-card::after{content:'';position:absolute;bottom:-60px;left:-40px;width:250px;height:250px;background:rgba(255,255,255,.04);border-radius:50%}
+.doctor-avatar{width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.2);border:4px solid rgba(255,255,255,.5);margin:0 auto 24px;position:relative;z-index:1;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.25)}
+.doctor-avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.doctor-name-card{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;margin-bottom:6px;position:relative;z-index:1}
+.doctor-spec-card{font-size:.9rem;opacity:.85;margin-bottom:20px;position:relative;z-index:1}
+.hero-badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;position:relative;z-index:1}
+.hero-badge-item{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:6px 14px;border-radius:50px;font-size:.78rem;font-weight:500}
+.float-card{position:absolute;background:var(--white);border-radius:var(--radius);padding:12px 16px;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:10px;min-width:150px;z-index:2}
+.float-card-1{top:16px;left:16px}
+.float-card-2{bottom:20px;right:16px}
+.float-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.float-card-text{font-size:.78rem;color:var(--mid)}
+.float-card-num{font-size:1.1rem;font-weight:700;color:var(--navy)}
+/* SERVICES PREVIEW */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:var(--white);border-radius:var(--radius-lg);padding:32px;border:1px solid var(--border);transition:all .3s ease;cursor:pointer}
+.service-card:hover{border-color:var(--navy);box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.service-icon{width:60px;height:60px;border-radius:16px;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:20px;transition:all .3s}
+.service-card:hover .service-icon{background:var(--navy);color:#fff}
+.service-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+.service-card p{font-size:.88rem;color:var(--mid);line-height:1.7}
+/* WHY CHOOSE */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.why-card{text-align:center;padding:32px 20px}
+.why-icon{width:64px;height:64px;border-radius:20px;background:linear-gradient(135deg,var(--navy),var(--navy-light));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.4rem;margin:0 auto 20px}
+.why-card h3{font-weight:700;font-size:1rem;color:var(--navy);margin-bottom:8px}
+.why-card p{font-size:.85rem;color:var(--mid);line-height:1.7}
+/* TESTIMONIALS */
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testimonial-card{background:var(--white);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.stars{color:var(--gold);font-size:.9rem;margin-bottom:14px}
+.testimonial-text{color:var(--mid);font-size:.9rem;line-height:1.8;margin-bottom:20px;font-style:italic}
+.testimonial-author{display:flex;align-items:center;gap:12px}
+.author-avatar{width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem}
+.author-name{font-weight:600;font-size:.9rem;color:var(--dark)}
+.author-label{font-size:.78rem;color:var(--light)}
+/* ABOUT PAGE */
+#page-about{padding-top:72px}
+.about-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:60px;align-items:start}
+.about-img-wrap{position:relative}
+.about-img-card{background:linear-gradient(145deg,var(--navy),var(--teal));border-radius:var(--radius-lg);padding:48px 32px;text-align:center;color:#fff;min-height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.about-doc-avatar{width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.2);border:4px solid rgba(255,255,255,.5);margin:0 auto 20px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.25)}
+.about-doc-avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.qual-badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.qual-badge{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:50px;font-size:.8rem;font-weight:600}
+.about-stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.about-stat{text-align:center;background:rgba(255,255,255,.12);border-radius:12px;padding:16px 8px}
+.about-stat-num{font-size:1.6rem;font-weight:800}
+.about-stat-label{font-size:.72rem;opacity:.8;margin-top:2px}
+.qual-list{margin-top:28px}
+.qual-item{display:flex;align-items:flex-start;gap:14px;padding:16px 0;border-bottom:1px solid var(--border)}
+.qual-item:last-child{border-bottom:none}
+.qual-dot{width:32px;height:32px;border-radius:10px;background:var(--bg);display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:.8rem;flex-shrink:0;margin-top:2px}
+.qual-text h4{font-weight:600;font-size:.95rem;color:var(--dark);margin-bottom:3px}
+.qual-text p{font-size:.83rem;color:var(--mid)}
+.exp-timeline{margin-top:32px}
+.timeline-item{display:flex;gap:16px;padding:16px 0;border-left:2px solid var(--border);padding-left:20px;margin-left:8px;position:relative}
+.timeline-item::before{content:'';position:absolute;left:-6px;top:22px;width:10px;height:10px;border-radius:50%;background:var(--navy)}
+.timeline-year{background:var(--navy);color:#fff;padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:700;white-space:nowrap;height:fit-content;margin-top:2px}
+.timeline-content h4{font-weight:600;font-size:.95rem;color:var(--dark);margin-bottom:4px}
+.timeline-content p{font-size:.83rem;color:var(--mid)}
+/* SERVICES PAGE */
+#page-services{padding-top:72px}
+.services-full-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-full-card{background:var(--white);border-radius:var(--radius-lg);padding:32px;border:1px solid var(--border);transition:all .3s}
+.service-full-card:hover{border-color:var(--navy);box-shadow:var(--shadow-lg)}
+.service-full-icon{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,var(--navy),var(--navy-light));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;margin-bottom:20px}
+.service-full-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+.service-full-card p{font-size:.87rem;color:var(--mid);line-height:1.75;margin-bottom:16px}
+.service-tags{display:flex;flex-wrap:wrap;gap:6px}
+.service-tag{background:var(--bg);color:var(--navy);padding:4px 10px;border-radius:50px;font-size:.75rem;font-weight:500}
+/* APPOINTMENT PAGE */
+#page-appointment{padding-top:72px}
+.appt-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.appt-left,.appt-right{background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:32px}
+.appt-section-title{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.date-picker-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px}
+.date-btn{padding:10px 16px;border:2px solid var(--border);border-radius:10px;cursor:pointer;font-size:.85rem;text-align:center;transition:all .2s;background:var(--white)}
+.date-btn:hover{border-color:var(--navy);color:var(--navy)}
+.date-btn.selected{background:var(--navy);border-color:var(--navy);color:#fff}
+.date-btn.today::after{content:'Today';display:block;font-size:.68rem;opacity:.7}
+.slots-title{font-size:.9rem;font-weight:600;color:var(--mid);margin-bottom:14px}
+.slots-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px}
+.slot-btn{padding:10px 8px;border:2px solid var(--border);border-radius:10px;cursor:pointer;font-size:.83rem;text-align:center;background:var(--white);transition:all .2s;font-weight:500}
+.slot-btn:hover:not(.booked){border-color:var(--navy);color:var(--navy);background:var(--bg)}
+.slot-btn.selected{background:var(--navy);border-color:var(--navy);color:#fff}
+.slot-btn.booked{background:#FFF5F5;border-color:#FEB2B2;color:#FC8181;cursor:not-allowed;text-decoration:line-through}
+.slot-btn.available{border-color:#C6F6D5;background:#F0FFF4;color:var(--success)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:.78rem;color:var(--mid)}
+.legend-dot{width:12px;height:12px;border-radius:3px}
+.form-group{margin-bottom:18px}
+.form-label{display:block;font-size:.85rem;font-weight:600;color:var(--dark);margin-bottom:7px}
+.form-input{width:100%;padding:11px 16px;border:2px solid var(--border);border-radius:10px;font-size:.9rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s;background:var(--white);color:var(--dark)}
+.form-input:focus{border-color:var(--navy)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.gcal-embed-wrap{background:var(--bg);border-radius:var(--radius);padding:20px;margin-bottom:24px;text-align:center;min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:2px dashed var(--border)}
+.gcal-icon{font-size:2.5rem;margin-bottom:12px;color:var(--navy)}
+.gcal-text{font-size:.88rem;color:var(--mid);line-height:1.6}
+.booking-summary{background:var(--bg);border-radius:var(--radius);padding:20px;margin-bottom:20px;display:none}
+.booking-summary.show{display:block}
+.summary-row{display:flex;justify-content:space-between;font-size:.88rem;padding:6px 0;border-bottom:1px solid var(--border)}
+.summary-row:last-child{border-bottom:none;font-weight:700;color:var(--navy)}
+/* CANCEL BOOKING */
+.cancel-section{margin-top:28px;padding-top:28px;border-top:1px solid var(--border)}
+/* CONTACT PAGE */
+#page-contact{padding-top:72px}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px}
+.contact-info-card{background:linear-gradient(145deg,var(--navy),var(--navy-light));border-radius:var(--radius-lg);padding:40px;color:#fff}
+.contact-info-card h2{font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:12px}
+.contact-info-card p{opacity:.85;font-size:.93rem;line-height:1.7;margin-bottom:32px}
+.contact-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:24px}
+.contact-item-icon{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-item-text h4{font-weight:600;font-size:.9rem;margin-bottom:2px}
+.contact-item-text p{font-size:.85rem;opacity:.8}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.hours-row{font-size:.82rem;display:flex;justify-content:space-between;background:rgba(255,255,255,.1);border-radius:8px;padding:8px 12px}
+.contact-form-card{background:var(--white);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow)}
+.map-placeholder{background:var(--bg);border-radius:var(--radius);height:180px;display:flex;align-items:center;justify-content:center;margin-bottom:24px;border:2px dashed var(--border);color:var(--mid);font-size:.9rem;text-align:center;gap:8px}
+/* FOOTER */
+footer{background:var(--navy-dark);color:#fff;padding:60px 0 28px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-brand h3{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:10px}
+.footer-brand p{font-size:.85rem;opacity:.7;line-height:1.8;margin-bottom:20px}
+.social-links{display:flex;gap:10px}
+.social-btn{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:all .2s;font-size:.9rem}
+.social-btn:hover{background:var(--gold)}
+.footer-col h4{font-size:.9rem;font-weight:700;margin-bottom:16px;color:rgba(255,255,255,.9)}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:.85rem;color:rgba(255,255,255,.6);transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:rgba(255,255,255,.5)}
+/* CHATBOT */
+.chatbot-fab{position:fixed;bottom:28px;right:28px;z-index:999;width:60px;height:60px;background:linear-gradient(135deg,var(--navy),var(--navy-light));border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.4rem;cursor:pointer;box-shadow:var(--shadow-lg);border:none;transition:transform .3s;animation:pulse 2.5s ease-in-out infinite}
+.chatbot-fab:hover{transform:scale(1.1)}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(27,79,138,.4)}50%{box-shadow:0 0 0 12px rgba(27,79,138,0)}}
+.chatbot-window{position:fixed;bottom:100px;right:28px;z-index:998;width:360px;background:var(--white);border-radius:var(--radius-lg);box-shadow:0 20px 60px rgba(0,0,0,.2);display:none;flex-direction:column;max-height:520px;overflow:hidden;animation:slideUp .3s ease}
+.chatbot-window.open{display:flex}
+@keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.chatbot-header{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;padding:16px 20px;display:flex;align-items:center;gap:12px}
+.chatbot-avatar{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.chatbot-info h4{font-weight:600;font-size:.95rem}
+.chatbot-info p{font-size:.75rem;opacity:.8;display:flex;align-items:center;gap:4px}
+.chatbot-info p::before{content:'';width:7px;height:7px;background:#4ade80;border-radius:50%;display:inline-block}
+.chatbot-close{margin-left:auto;cursor:pointer;opacity:.8;font-size:1.1rem}
+.chatbot-close:hover{opacity:1}
+.chatbot-body{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;min-height:300px}
+.chat-msg{max-width:82%;padding:10px 14px;border-radius:16px;font-size:.87rem;line-height:1.6;animation:msgIn .2s ease}
+@keyframes msgIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+.chat-msg.bot{background:var(--bg);color:var(--dark);border-bottom-left-radius:4px;align-self:flex-start}
+.chat-msg.user{background:var(--navy);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.chat-quick-btns{display:flex;flex-wrap:wrap;gap:6px;align-self:flex-start}
+.chat-quick-btn{padding:6px 12px;background:var(--white);border:1.5px solid var(--border);border-radius:50px;font-size:.8rem;cursor:pointer;color:var(--navy);font-weight:500;transition:all .2s;font-family:'Inter',sans-serif}
+.chat-quick-btn:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.chatbot-input-row{padding:12px 16px;border-top:1px solid var(--border);display:flex;gap:8px}
+.chatbot-input{flex:1;padding:10px 16px;border:2px solid var(--border);border-radius:50px;font-size:.88rem;outline:none;font-family:'Inter',sans-serif;transition:border-color .2s}
+.chatbot-input:focus{border-color:var(--navy)}
+.chatbot-send{width:38px;height:38px;background:var(--navy);color:#fff;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;flex-shrink:0}
+.chatbot-send:hover{background:var(--navy-light)}
+/* ADMIN */
+.admin-fab{position:fixed;bottom:28px;left:28px;z-index:999;background:var(--bg);border:2px solid var(--border);border-radius:50px;padding:10px 18px;display:flex;align-items:center;gap:8px;cursor:pointer;font-size:.82rem;font-weight:600;color:var(--mid);transition:all .3s;box-shadow:var(--shadow)}
+.admin-fab:hover{border-color:var(--navy);color:var(--navy)}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.open{display:flex}
+.modal{background:var(--white);border-radius:var(--radius-lg);width:100%;max-width:640px;max-height:90vh;overflow-y:auto;box-shadow:0 30px 80px rgba(0,0,0,.3);animation:modalIn .3s ease}
+@keyframes modalIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
+.modal-header{padding:24px 28px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.modal-header h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy)}
+.modal-close{cursor:pointer;font-size:1.2rem;color:var(--light);transition:color .2s}
+.modal-close:hover{color:var(--danger)}
+.modal-body{padding:28px}
+.modal-footer{padding:16px 28px;border-top:1px solid var(--border);display:flex;gap:12px;justify-content:flex-end}
+.admin-tabs{display:flex;gap:4px;background:var(--bg);border-radius:12px;padding:4px;margin-bottom:24px}
+.admin-tab{flex:1;padding:9px;text-align:center;border-radius:9px;cursor:pointer;font-size:.85rem;font-weight:500;color:var(--mid);transition:all .2s}
+.admin-tab.active{background:var(--white);color:var(--navy);box-shadow:var(--shadow)}
+.admin-panel-content{display:none}
+.admin-panel-content.active{display:block}
+.booking-list{display:flex;flex-direction:column;gap:12px}
+.booking-item{background:var(--bg);border-radius:var(--radius);padding:16px;border-left:4px solid var(--navy)}
+.booking-item-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.booking-item-name{font-weight:700;font-size:.95rem;color:var(--dark)}
+.booking-item-badge{background:var(--navy);color:#fff;padding:3px 10px;border-radius:50px;font-size:.72rem;font-weight:600}
+.booking-item-badge.cancelled{background:var(--danger)}
+.booking-item-detail{font-size:.82rem;color:var(--mid);display:flex;gap:14px;flex-wrap:wrap}
+/* NOTIFICATION */
+.notif{position:fixed;top:90px;right:20px;z-index:3000;background:var(--white);border-radius:var(--radius);padding:16px 20px;box-shadow:var(--shadow-lg);border-left:4px solid var(--success);display:flex;align-items:center;gap:12px;min-width:300px;animation:notifIn .3s ease;font-size:.9rem}
+.notif.error{border-left-color:var(--danger)}
+.notif.info{border-left-color:var(--navy)}
+@keyframes notifIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+/* SETUP MODAL */
+.setup-badge{background:rgba(232,148,26,.1);color:var(--gold);border:1px solid rgba(232,148,26,.3);padding:6px 14px;border-radius:50px;font-size:.8rem;font-weight:600;display:inline-block;margin-bottom:16px}
+.setup-step{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.setup-step:last-child{border-bottom:none}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;flex-shrink:0}
+.step-text h4{font-weight:600;font-size:.9rem;color:var(--dark);margin-bottom:3px}
+.step-text p{font-size:.82rem;color:var(--mid);line-height:1.6}
+.step-text code{background:var(--bg);padding:2px 6px;border-radius:4px;font-size:.8rem;color:var(--navy)}
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .services-grid,.services-full-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero h1{font-size:2.2rem}
+  .hero-img-wrap{display:none}
+  .about-grid,.appt-grid,.contact-grid{grid-template-columns:1fr}
+  .services-grid,.services-full-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .testimonials-grid{grid-template-columns:1fr}
+  .nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);flex-direction:column;padding:16px;gap:4px}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+  .footer-grid{grid-template-columns:1fr}
+  .chatbot-window{right:12px;width:calc(100vw - 24px)}
+  .hero-stats{gap:20px}
+  .date-picker-row{grid-template-columns:repeat(2,1fr)}
+  .float-card{display:none}
+  .form-row{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .why-grid{grid-template-columns:1fr}
+  .slots-grid{grid-template-columns:repeat(2,1fr)}
+  .section{padding:56px 0}
+}
+.hidden{display:none!important}
+.page{display:none}
+.page.active{display:block}
+/* ADMIN DASHBOARD HEADER */
+.admin-dash-header{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(135deg,var(--navy),var(--navy-light));border-radius:var(--radius);padding:14px 18px;margin-bottom:20px;color:#fff}
+.admin-dash-title{font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:8px}
+.admin-dash-actions{display:flex;gap:8px;align-items:center}
+.btn-logout{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;padding:6px 14px;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .2s}
+.btn-logout:hover{background:rgba(231,76,60,.8);border-color:transparent}
+/* FILTER BAR */
+.filter-bar{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.filter-btn{padding:6px 14px;border-radius:50px;border:2px solid var(--border);background:var(--white);font-size:.8rem;font-weight:600;cursor:pointer;color:var(--mid);transition:all .2s}
+.filter-btn.active{background:var(--navy);border-color:var(--navy);color:#fff}
+.filter-search{flex:1;min-width:160px;padding:7px 14px;border:2px solid var(--border);border-radius:50px;font-size:.83rem;outline:none;font-family:'Inter',sans-serif}
+.filter-search:focus{border-color:var(--navy)}
+/* BOOKING ACTIONS */
+.booking-actions{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.bk-btn{padding:5px 12px;border-radius:50px;border:none;font-size:.75rem;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:4px;transition:all .2s}
+.bk-btn-cancel{background:#FFF5F5;color:var(--danger);border:1px solid #FEB2B2}
+.bk-btn-cancel:hover{background:var(--danger);color:#fff}
+.bk-btn-done{background:#F0FFF4;color:var(--success);border:1px solid #9AE6B4}
+.bk-btn-done:hover{background:var(--success);color:#fff}
+.bk-btn-call{background:var(--bg);color:var(--navy);border:1px solid var(--border)}
+.bk-btn-call:hover{background:var(--navy);color:#fff}
+.booking-item-badge.completed{background:var(--success)}
+/* REPORT CARDS */
+.report-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px}
+.report-stat-card{background:var(--bg);border-radius:var(--radius);padding:16px;text-align:center;border:1px solid var(--border)}
+.report-stat-num{font-size:2rem;font-weight:800;color:var(--navy)}
+.report-stat-label{font-size:.75rem;color:var(--mid);margin-top:2px}
+.report-stat-card.gold{border-color:rgba(232,148,26,.3);background:rgba(232,148,26,.06)}
+.report-stat-card.gold .report-stat-num{color:var(--gold)}
+.report-stat-card.green{border-color:rgba(39,174,96,.3);background:rgba(39,174,96,.06)}
+.report-stat-card.green .report-stat-num{color:var(--success)}
+.report-stat-card.red{border-color:rgba(231,76,60,.3);background:rgba(231,76,60,.06)}
+.report-stat-card.red .report-stat-num{color:var(--danger)}
+.chart-wrap{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:16px}
+.chart-wrap h4{font-size:.88rem;font-weight:700;color:var(--navy);margin-bottom:12px}
+.today-list{margin-top:16px}
+.today-item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);font-size:.85rem}
+.today-item:last-child{border-bottom:none}
+.today-time{background:var(--navy);color:#fff;padding:3px 10px;border-radius:50px;font-size:.75rem;font-weight:600;white-space:nowrap}
+.today-name{font-weight:600;color:var(--dark);flex:1}
+.today-reason{font-size:.78rem;color:var(--mid)}
+/* SHEETS BADGE */
+.sheets-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(39,174,96,.1);color:var(--success);border:1px solid rgba(39,174,96,.3);padding:5px 12px;border-radius:50px;font-size:.78rem;font-weight:600;margin-bottom:12px}
+.modal{max-width:680px}
+</style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="main-nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#" onclick="showPage('home')">
+        <div class="nav-logo-icon"><img src="DoctorImage.png" alt="Dr. Sheetal Talekar"></div>
+        <div>
+          <div class="nav-logo-text">Dr. Sheetal Talekar</div>
+          <div class="nav-logo-sub">Gynecologist & Obstetrician</div>
+        </div>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#" onclick="showPage('home')" data-page="home" class="active">Home</a>
+        <a href="#" onclick="showPage('about')" data-page="about">About</a>
+        <a href="#" onclick="showPage('services')" data-page="services">Services</a>
+        <a href="#" onclick="showPage('appointment')" data-page="appointment">Appointment</a>
+        <a href="#" onclick="showPage('contact')" data-page="contact">Contact</a>
+        <a href="#" class="btn btn-primary btn-sm nav-cta" onclick="showPage('appointment')"><i class="fas fa-calendar-check"></i> Book Now</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== PAGE: HOME ===== -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge"><i class="fas fa-award"></i> Trusted Gynecologist in Vapi</div>
+          <h1>Expert Care for <span>Women's Health</span> at Every Stage</h1>
+          <p class="hero-desc">Dr. Sheetal Talekar is a highly qualified Consultant Gynecologist & Obstetrician with MBBS, DNB (OBG), and DGO credentials, bringing 15+ years of dedicated care to women and their families in Vapi and surrounding regions.</p>
+          <div class="hero-stats">
+            <div><div class="hero-stat-num">15+</div><div class="hero-stat-label">Years Experience</div></div>
+            <div><div class="hero-stat-num">8000+</div><div class="hero-stat-label">Happy Patients</div></div>
+            <div><div class="hero-stat-num">1200+</div><div class="hero-stat-label">Safe Deliveries</div></div>
+          </div>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" onclick="showPage('appointment')"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+            <a class="btn btn-outline" onclick="showPage('about')"><i class="fas fa-user-md"></i> About Doctor</a>
+          </div>
+        </div>
+        <div class="hero-img-wrap">
+          <div class="hero-img-card">
+            <div class="doctor-avatar"><img src="DoctorImage.png" alt="Dr. Sheetal Talekar"></div>
+            <div class="doctor-name-card">Dr. Sheetal Talekar</div>
+            <div class="doctor-spec-card">MBBS · DNB (OBG) · DGO</div>
+            <div class="hero-badges">
+              <div class="hero-badge-item"><i class="fas fa-star"></i> Gynecologist</div>
+              <div class="hero-badge-item"><i class="fas fa-baby"></i> Obstetrician</div>
+              <div class="hero-badge-item"><i class="fas fa-microscope"></i> Laparoscopy</div>
+            </div>
+          </div>
+          <div class="float-card float-card-1">
+            <div class="float-icon" style="background:rgba(39,174,96,.1);color:#27AE60"><i class="fas fa-check-circle"></i></div>
+            <div><div class="float-card-num">100%</div><div class="float-card-text">Safe Deliveries</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="tag">Our Specialties</div>
+      <h2 class="section-title">Comprehensive Women's Healthcare</h2>
+      <p class="section-sub">From prenatal care to advanced gynecological procedures, we offer a wide spectrum of services tailored to your needs.</p>
+      <div class="services-grid">
+        <div class="service-card" onclick="showPage('services')">
+          <div class="service-icon" style="color:#E8941A"><i class="fas fa-baby"></i></div>
+          <h3>Obstetrics & Prenatal Care</h3>
+          <p>Comprehensive antenatal care, safe delivery, and postnatal support for mother and baby.</p>
+        </div>
+        <div class="service-card" onclick="showPage('services')">
+          <div class="service-icon" style="color:#1B4F8A"><i class="fas fa-venus"></i></div>
+          <h3>Gynecological Consultations</h3>
+          <p>Expert diagnosis and treatment of gynecological conditions with a compassionate approach.</p>
+        </div>
+        <div class="service-card" onclick="showPage('services')">
+          <div class="service-icon" style="color:#4ECDC4"><i class="fas fa-procedures"></i></div>
+          <h3>Laparoscopic Surgery</h3>
+          <p>Minimally invasive surgical procedures for fibroids, cysts, endometriosis, and more.</p>
+        </div>
+        <div class="service-card" onclick="showPage('services')">
+          <div class="service-icon" style="color:#E74C3C"><i class="fas fa-heartbeat"></i></div>
+          <h3>High-Risk Pregnancy</h3>
+          <p>Specialized monitoring and management for high-risk pregnancies ensuring the best outcomes.</p>
+        </div>
+        <div class="service-card" onclick="showPage('services')">
+          <div class="service-icon" style="color:#8B5CF6"><i class="fas fa-shield-alt"></i></div>
+          <h3>PCOS & Infertility</h3>
+          <p>Holistic treatment of PCOS, menstrual disorders, and fertility enhancement therapies.</p>
+        </div>
+        <div class="service-card" onclick="showPage('services')">
+          <div class="service-icon" style="color:#27AE60"><i class="fas fa-female"></i></div>
+          <h3>Menopause Management</h3>
+          <p>Evidence-based care and hormone therapy to support women through menopause.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <div class="container">
+      <div class="tag">Why Choose Us</div>
+      <h2 class="section-title">Committed to Your Well-being</h2>
+      <p class="section-sub">Our clinic is designed around patient comfort, clinical excellence, and modern technology.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Expert Qualifications</h3>
+          <p>MBBS, DNB (Obstetrics & Gynaecology), DGO — trained at leading Indian medical institutions.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-heart"></i></div>
+          <h3>Patient-First Approach</h3>
+          <p>Every consultation is personalised, empathetic, and thorough — your comfort always comes first.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <h3>Flexible Appointments</h3>
+          <p>Online booking with slots from 10 AM to 5 PM, Mon–Sat. Easy rescheduling and cancellation.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-microscope"></i></div>
+          <h3>Modern Technology</h3>
+          <p>Latest diagnostic equipment and minimally invasive surgical techniques for best outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="tag">Patient Reviews</div>
+      <h2 class="section-title">What Our Patients Say</h2>
+      <p class="section-sub">Real experiences from the women and families we've had the privilege to care for.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">"Dr. Talekar guided me through my entire pregnancy with such care and patience. My delivery was smooth and stress-free. I cannot recommend her enough!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div><div class="author-name">Priya Sharma</div><div class="author-label">Mother of 2 · Vapi</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">"I was struggling with PCOS for years. After treatment with Dr. Sheetal, my cycles have normalized and I feel so much better. Very knowledgeable doctor."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">M</div>
+            <div><div class="author-name">Meena Patel</div><div class="author-label">PCOS Patient · Silvassa</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">"The laparoscopic surgery was performed expertly and my recovery was very quick. Dr. Talekar explained every step clearly, which made me feel confident."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div><div class="author-name">Rekha Joshi</div><div class="author-label">Surgery Patient · Daman</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section" style="background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;padding:64px 0">
+    <div class="container" style="text-align:center">
+      <div class="tag" style="background:rgba(255,255,255,.15);color:#fff;border:none">Book an Appointment</div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:14px">Your Health Is Our Priority</h2>
+      <p style="opacity:.85;margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto">Schedule a consultation with Dr. Sheetal Talekar today. Slots available 10 AM to 5 PM, Mon–Sat.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-gold" onclick="showPage('appointment')"><i class="fas fa-calendar-plus"></i> Book Online Now</a>
+        <a class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:2px solid rgba(255,255,255,.3)" href="tel:+917600000000"><i class="fas fa-phone"></i> Call Now</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+<!-- ===== PAGE: ABOUT ===== -->
+<div id="page-about" class="page">
+  <section class="section" style="padding-top:100px">
+    <div class="container">
+      <div class="tag">About the Doctor</div>
+      <div class="about-grid">
+        <div>
+          <div class="about-img-card">
+            <div class="about-doc-avatar"><img src="DoctorImage.png" alt="Dr. Sheetal Talekar"></div>
+            <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:6px">Dr. Sheetal Talekar</h3>
+            <p style="opacity:.85;font-size:.88rem">Consultant Gynecologist & Obstetrician</p>
+            <div class="qual-badges">
+              <div class="qual-badge">MBBS</div>
+              <div class="qual-badge">DNB (OBG)</div>
+              <div class="qual-badge">DGO</div>
+            </div>
+            <div class="about-stats-row">
+              <div class="about-stat"><div class="about-stat-num">15+</div><div class="about-stat-label">Years Exp.</div></div>
+              <div class="about-stat"><div class="about-stat-num">8K+</div><div class="about-stat-label">Patients</div></div>
+              <div class="about-stat"><div class="about-stat-num">1.2K+</div><div class="about-stat-label">Deliveries</div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="section-title">Dedicated to Women's Health for Over 15 Years</h2>
+          <p style="color:var(--mid);line-height:1.9;margin-bottom:24px">Dr. Sheetal Talekar is a seasoned Consultant Gynecologist and Obstetrician based in Vapi, Gujarat. With extensive academic training and clinical experience, she has dedicated her career to providing comprehensive, compassionate women's healthcare — from routine gynecological checkups to complex high-risk pregnancies and advanced laparoscopic procedures.</p>
+          <p style="color:var(--mid);line-height:1.9;margin-bottom:32px">Her patient-first philosophy, combined with evidence-based medicine, has made her one of the most trusted gynecologists in the Vapi-Silvassa region. She believes in educating her patients at every step, ensuring they are informed and empowered participants in their own healthcare journey.</p>
+
+          <h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:4px">Academic Qualifications</h3>
+          <div class="qual-list">
+            <div class="qual-item">
+              <div class="qual-dot"><i class="fas fa-graduation-cap"></i></div>
+              <div class="qual-text"><h4>MBBS</h4><p>N.D.M.V. Samaj's Medical College, Nashik · 2005</p></div>
+            </div>
+            <div class="qual-item">
+              <div class="qual-dot"><i class="fas fa-certificate"></i></div>
+              <div class="qual-text"><h4>DGO (Diploma in Gynecology & Obstetrics)</h4><p>Rajiv Gandhi University of Health Sciences, Bangalore · 2011</p></div>
+            </div>
+            <div class="qual-item">
+              <div class="qual-dot"><i class="fas fa-medal"></i></div>
+              <div class="qual-text"><h4>DNB – Obstetrics & Gynaecology</h4><p>National Board of Examinations, India</p></div>
+            </div>
+          </div>
+
+          <h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin:24px 0 4px">Professional Experience</h3>
+          <div class="exp-timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">Current</div>
+              <div class="timeline-content"><h4>Consultant Gynecologist & Obstetrician</h4><p>Sheetal Clinic, Gunjan, Vapi</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2015+</div>
+              <div class="timeline-content"><h4>Senior Gynecologist</h4><p>Private Practice & Hospital Consultations, Vapi Region</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2011</div>
+              <div class="timeline-content"><h4>Residency & Post-Graduate Training</h4><p>Obstetrics & Gynecology, Karnataka Medical Institutions</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-about -->
+
+<!-- ===== PAGE: SERVICES ===== -->
+<div id="page-services" class="page">
+  <section class="section section-alt" style="padding-top:100px">
+    <div class="container">
+      <div class="tag">What We Offer</div>
+      <h2 class="section-title">Our Medical Services</h2>
+      <p class="section-sub">A full spectrum of gynecological and obstetric services under one roof, delivered with expertise and care.</p>
+      <div class="services-full-grid">
+        <div class="service-full-card">
+          <div class="service-full-icon"><i class="fas fa-baby"></i></div>
+          <h3>Antenatal & Prenatal Care</h3>
+          <p>Complete pregnancy management from first trimester to delivery — regular monitoring, ultrasounds, and nutritional guidance for a healthy pregnancy.</p>
+          <div class="service-tags"><span class="service-tag">Pregnancy</span><span class="service-tag">Ultrasound</span><span class="service-tag">Nutrition</span></div>
+        </div>
+        <div class="service-full-card">
+          <div class="service-full-icon" style="background:linear-gradient(135deg,#E8941A,#F5A93B)"><i class="fas fa-hospital"></i></div>
+          <h3>Normal & Cesarean Delivery</h3>
+          <p>Safe, monitored deliveries with a focus on mother and baby wellbeing. Both vaginal and C-section deliveries performed with precision and care.</p>
+          <div class="service-tags"><span class="service-tag">Normal Delivery</span><span class="service-tag">C-Section</span><span class="service-tag">Neonatal Care</span></div>
+        </div>
+        <div class="service-full-card">
+          <div class="service-full-icon" style="background:linear-gradient(135deg,#E74C3C,#FC8181)"><i class="fas fa-heartbeat"></i></div>
+          <h3>High-Risk Pregnancy</h3>
+          <p>Specialized care for pregnancies complicated by diabetes, hypertension, multiple gestation, or fetal anomalies. Close monitoring for safe outcomes.</p>
+          <div class="service-tags"><span class="service-tag">Gestational Diabetes</span><span class="service-tag">Preeclampsia</span><span class="service-tag">Twins</span></div>
+        </div>
+        <div class="service-full-card">
+          <div class="service-full-icon" style="background:linear-gradient(135deg,#4ECDC4,#7EDDD8)"><i class="fas fa-procedures"></i></div>
+          <h3>Laparoscopic Surgery</h3>
+          <p>Minimally invasive surgical treatment for fibroids, ovarian cysts, endometriosis, and ectopic pregnancy — faster recovery, minimal scars.</p>
+          <div class="service-tags"><span class="service-tag">Endometriosis</span><span class="service-tag">Fibroids</span><span class="service-tag">Ovarian Cysts</span></div>
+        </div>
+        <div class="service-full-card">
+          <div class="service-full-icon" style="background:linear-gradient(135deg,#8B5CF6,#A78BFA)"><i class="fas fa-dna"></i></div>
+          <h3>PCOS & Infertility Treatment</h3>
+          <p>Hormonal evaluation, lifestyle intervention, and medical management for PCOS. Ovulation induction and fertility workup services available.</p>
+          <div class="service-tags"><span class="service-tag">PCOS</span><span class="service-tag">Infertility</span><span class="service-tag">Ovulation</span></div>
+        </div>
+        <div class="service-full-card">
+          <div class="service-full-icon" style="background:linear-gradient(135deg,#27AE60,#55D888)"><i class="fas fa-shield-virus"></i></div>
+          <h3>Cervical Cancer Screening</h3>
+          <p>Pap smear, colposcopy, and HPV screening for early detection and prevention of cervical cancer and other gynecological malignancies.</p>
+          <div class="service-tags"><span class="service-tag">Pap Smear</span><span class="service-tag">HPV</span><span class="service-tag">Colposcopy</span></div>
+        </div>
+        <div class="service-full-card">
+          <div class="service-full-icon" style="background:linear-gradient(135deg,#F59E0B,#FCD34D)"><i class="fas fa-female"></i></div>
+          <h3>Menstrual Disorders</h3>
+          <p>Diagnosis and treatment of irregular periods, heavy bleeding, painful periods (dysmenorrhea), and premenstrual syndrome (PMS).</p>
+          <div class="service-tags"><span class="service-tag">Dysmenorrhea</span><span class="service-tag">Amenorrhea</span><span class="service-tag">PMS</span></div>
+        </div>
+        <div class="service-full-card">
+          <div class="service-full-icon" style="background:linear-gradient(135deg,#EC4899,#F9A8D4)"><i class="fas fa-spa"></i></div>
+          <h3>Menopause Management</h3>
+          <p>Comprehensive menopause care including hormone replacement therapy (HRT), osteoporosis management, and lifestyle counseling.</p>
+          <div class="service-tags"><span class="service-tag">HRT</span><span class="service-tag">Osteoporosis</span><span class="service-tag">Counseling</span></div>
+        </div>
+        <div class="service-full-card">
+          <div class="service-full-icon" style="background:linear-gradient(135deg,#0EA5E9,#7DD3FC)"><i class="fas fa-pills"></i></div>
+          <h3>Family Planning & Contraception</h3>
+          <p>Evidence-based counseling on contraceptive methods, IUD insertion, and family planning tailored to your lifestyle and health needs.</p>
+          <div class="service-tags"><span class="service-tag">IUD</span><span class="service-tag">Contraception</span><span class="service-tag">Counseling</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-services -->
+
+<!-- ===== PAGE: APPOINTMENT ===== -->
+<div id="page-appointment" class="page">
+  <section class="section" style="padding-top:100px">
+    <div class="container">
+      <div class="tag">Book a Visit</div>
+      <h2 class="section-title">Schedule Your Appointment</h2>
+      <p class="section-sub">Choose your preferred date and time slot. All bookings sync automatically with Google Calendar.</p>
+
+      <div class="appt-grid">
+        <!-- LEFT: Date + Slots -->
+        <div class="appt-left">
+          <div class="appt-section-title"><i class="fas fa-calendar-alt" style="color:var(--navy)"></i> Select Date & Time</div>
+
+          <!-- Date Navigation -->
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+            <button class="btn btn-outline btn-sm" onclick="changeWeek(-1)"><i class="fas fa-chevron-left"></i></button>
+            <span id="week-label" style="font-weight:600;font-size:.9rem;color:var(--navy)"></span>
+            <button class="btn btn-outline btn-sm" onclick="changeWeek(1)"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="date-picker-row" id="date-picker-row"></div>
+
+          <!-- Legend -->
+          <div class="legend">
+            <div class="legend-item"><div class="legend-dot" style="background:#C6F6D5;border:1px solid #9AE6B4"></div> Available</div>
+            <div class="legend-item"><div class="legend-dot" style="background:#FEB2B2;border:1px solid #FC8181"></div> Booked</div>
+            <div class="legend-item"><div class="legend-dot" style="background:var(--navy)"></div> Selected</div>
+          </div>
+
+          <!-- Time Slots -->
+          <div class="slots-title"><i class="fas fa-clock" style="color:var(--navy);margin-right:6px"></i>Available Slots for <span id="slots-date-label">—</span></div>
+          <div class="slots-grid" id="slots-grid">
+            <div style="grid-column:1/-1;text-align:center;padding:20px;color:var(--mid);font-size:.9rem"><i class="fas fa-hand-pointer" style="margin-right:6px"></i>Please select a date above</div>
+          </div>
+
+          <!-- Google Calendar Embed -->
+          <div class="gcal-embed-wrap" id="gcal-embed-wrap">
+            <div class="gcal-icon"><i class="fab fa-google" style="color:#4285F4"></i></div>
+            <div class="gcal-text"><strong style="color:var(--navy)">Google Calendar Connected</strong><br>Configure your Calendar ID in <a href="#" onclick="openSetup()" style="color:var(--navy);font-weight:600">Settings</a> to see live availability.</div>
+          </div>
+          <div id="gcal-iframe-wrap" class="hidden">
+            <iframe id="gcal-iframe" src="" style="width:100%;height:300px;border:none;border-radius:12px" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </div>
+
+        <!-- RIGHT: Booking Form -->
+        <div class="appt-right">
+          <div class="appt-section-title"><i class="fas fa-user-edit" style="color:var(--navy)"></i> Patient Information</div>
+
+          <div class="booking-summary" id="booking-summary">
+            <div style="font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:10px"><i class="fas fa-info-circle"></i> Booking Summary</div>
+            <div class="summary-row"><span>Date</span><span id="sum-date">—</span></div>
+            <div class="summary-row"><span>Time</span><span id="sum-time">—</span></div>
+            <div class="summary-row"><span>Doctor</span><span>Dr. Sheetal Talekar</span></div>
+          </div>
+
+          <form id="booking-form" onsubmit="submitBooking(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">First Name *</label>
+                <input type="text" class="form-input" id="f-fname" placeholder="First name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name *</label>
+                <input type="text" class="form-input" id="f-lname" placeholder="Last name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Mobile Number *</label>
+                <input type="tel" class="form-input" id="f-phone" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address *</label>
+                <input type="email" class="form-input" id="f-email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Age & Gender</label>
+              <div class="form-row">
+                <input type="number" class="form-input" id="f-age" placeholder="Age" min="1" max="120">
+                <select class="form-input" id="f-gender">
+                  <option value="">Select gender</option>
+                  <option>Female</option>
+                  <option>Male</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Reason for Visit</label>
+              <select class="form-input" id="f-reason">
+                <option value="">Select reason</option>
+                <option>Prenatal / Antenatal Care</option>
+                <option>Gynecological Checkup</option>
+                <option>PCOS / Hormonal Issues</option>
+                <option>Menstrual Disorders</option>
+                <option>Infertility Consultation</option>
+                <option>High-Risk Pregnancy</option>
+                <option>Laparoscopy / Surgery Consultation</option>
+                <option>Menopause Management</option>
+                <option>Family Planning</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Additional Notes</label>
+              <textarea class="form-input" id="f-notes" rows="3" placeholder="Any symptoms or medical history you'd like to mention…" style="resize:vertical"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px" id="submit-btn">
+              <i class="fas fa-calendar-check"></i> Confirm Appointment
+            </button>
+          </form>
+
+          <!-- Cancel Booking Section -->
+          <div class="cancel-section">
+            <div class="appt-section-title" style="margin-bottom:14px"><i class="fas fa-times-circle" style="color:var(--danger)"></i> Cancel Your Booking</div>
+            <p style="font-size:.85rem;color:var(--mid);margin-bottom:14px">Enter your email and booking reference to cancel your appointment.</p>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Email</label>
+                <input type="email" class="form-input" id="cancel-email" placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Booking Reference</label>
+                <input type="text" class="form-input" id="cancel-ref" placeholder="e.g. ST-20240101-1000">
+              </div>
+            </div>
+            <button class="btn btn-danger btn-sm" onclick="cancelBooking()"><i class="fas fa-trash-alt"></i> Cancel Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-appointment -->
+
+<!-- ===== PAGE: CONTACT ===== -->
+<div id="page-contact" class="page">
+  <section class="section" style="padding-top:100px">
+    <div class="container">
+      <div class="tag">Get in Touch</div>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Reach out for appointments, queries, or emergency guidance. We're here for you.</p>
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h2>Clinic Information</h2>
+          <p>Dr. Sheetal Talekar's clinic is conveniently located in Gunjan, Vapi. Walk-ins welcome during available hours.</p>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-text"><h4>Address</h4><p>Sheetal Clinic<br>Gunjan, Vapi, Gujarat – 396191</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-item-text"><h4>Phone</h4><p>+91 76000 00000<br>+91 02638 000000</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-text"><h4>Email</h4><p>appointments@drsheetal.clinic<br>info@drsheetal.clinic</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-item-text">
+              <h4>Clinic Hours</h4>
+              <div class="hours-grid">
+                <div class="hours-row"><span>Mon – Fri</span><span>10 AM – 5 PM</span></div>
+                <div class="hours-row"><span>Saturday</span><span>10 AM – 2 PM</span></div>
+                <div class="hours-row" style="grid-column:1/-1"><span>Sunday</span><span>Emergency Only</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt" style="font-size:2rem;color:var(--navy)"></i>
+            <div><strong>Sheetal Clinic, Gunjan, Vapi</strong><br><a href="https://maps.google.com/?q=Sheetal+Clinic+Gunjan+Vapi" target="_blank" style="color:var(--navy);font-size:.85rem"><i class="fas fa-external-link-alt"></i> Open in Google Maps</a></div>
+          </div>
+          <h3 style="font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:20px">Send Us a Message</h3>
+          <form onsubmit="submitContact(event)">
+            <div class="form-row">
+              <div class="form-group"><label class="form-label">Name *</label><input type="text" class="form-input" placeholder="Your name" required></div>
+              <div class="form-group"><label class="form-label">Phone *</label><input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX" required></div>
+            </div>
+            <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="your@email.com"></div>
+            <div class="form-group"><label class="form-label">Message *</label><textarea class="form-input" rows="4" placeholder="How can we help you?" required style="resize:vertical"></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center"><i class="fas fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-contact -->
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Dr. Sheetal Talekar</h3>
+        <p>Dedicated to comprehensive women's healthcare with compassion, expertise, and modern technology. Serving Vapi and surrounding regions for 15+ years.</p>
+        <div class="social-links">
+          <a class="social-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-btn" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="social-btn" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="social-btn" href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="#" onclick="showPage('home')">Home</a>
+          <a href="#" onclick="showPage('about')">About Dr. Talekar</a>
+          <a href="#" onclick="showPage('services')">Services</a>
+          <a href="#" onclick="showPage('appointment')">Book Appointment</a>
+          <a href="#" onclick="showPage('contact')">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <div class="footer-links">
+          <a href="#" onclick="showPage('services')">Prenatal Care</a>
+          <a href="#" onclick="showPage('services')">Normal Delivery</a>
+          <a href="#" onclick="showPage('services')">Laparoscopy</a>
+          <a href="#" onclick="showPage('services')">PCOS Treatment</a>
+          <a href="#" onclick="showPage('services')">Infertility</a>
+          <a href="#" onclick="showPage('services')">Menopause Care</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-links">
+          <a href="#"><i class="fas fa-map-marker-alt" style="margin-right:6px"></i>Gunjan, Vapi, Gujarat</a>
+          <a href="tel:+917600000000"><i class="fas fa-phone" style="margin-right:6px"></i>+91 76000 00000</a>
+          <a href="mailto:appointments@drsheetal.clinic"><i class="fas fa-envelope" style="margin-right:6px"></i>appointments@drsheetal.clinic</a>
+          <a href="#"><i class="fas fa-clock" style="margin-right:6px"></i>Mon–Fri: 10 AM – 5 PM</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Dr. Sheetal Talekar Clinic. All rights reserved.</span>
+      <span>Designed with <i class="fas fa-heart" style="color:#E74C3C"></i> for better women's health</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== CHATBOT ===== -->
+<button class="chatbot-fab" onclick="toggleChatbot()" id="chatbot-fab" title="Chat with us"><i class="fas fa-comment-medical"></i></button>
+<div class="chatbot-window" id="chatbot-window">
+  <div class="chatbot-header">
+    <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
+    <div class="chatbot-info"><h4>Clinic Assistant</h4><p>Online – Ready to help</p></div>
+    <span class="chatbot-close" onclick="toggleChatbot()"><i class="fas fa-times"></i></span>
+  </div>
+  <div class="chatbot-body" id="chatbot-body"></div>
+  <div class="chatbot-input-row">
+    <input class="chatbot-input" id="chatbot-input" placeholder="Type your message…" onkeydown="if(event.key==='Enter')sendChat()">
+    <button class="chatbot-send" onclick="sendChat()"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<!-- ===== ADMIN FAB ===== -->
+<div class="admin-fab" onclick="openAdmin()"><i class="fas fa-lock"></i> Admin</div>
+
+<!-- ===== ADMIN MODAL ===== -->
+<div class="modal-overlay" id="admin-modal" onclick="if(event.target===this)closeAdmin()">
+  <div class="modal">
+    <div class="modal-header">
+      <h3><i class="fas fa-shield-alt" style="color:var(--navy);margin-right:8px"></i>Admin Panel – Sheetal Clinic</h3>
+      <span class="modal-close" onclick="closeAdmin()"><i class="fas fa-times"></i></span>
+    </div>
+    <div class="modal-body" id="admin-body">
+
+      <!-- LOGIN -->
+      <div id="admin-login">
+        <div style="text-align:center;margin-bottom:24px">
+          <div style="width:64px;height:64px;background:var(--bg);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:1.8rem;color:var(--navy)"><i class="fas fa-lock"></i></div>
+          <p style="color:var(--mid);font-size:.9rem">Enter your admin password to continue</p>
+        </div>
+        <div class="form-group"><label class="form-label">Password</label>
+          <input type="password" class="form-input" id="admin-pw" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')adminLogin()">
+        </div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="adminLogin()"><i class="fas fa-sign-in-alt"></i> Login</button>
+        <p style="font-size:.78rem;color:var(--light);margin-top:12px;text-align:center">Default: <code>admin123</code> — change in Settings after login</p>
+      </div>
+
+      <!-- DASHBOARD -->
+      <div id="admin-dashboard" style="display:none">
+        <!-- Header row with logout -->
+        <div class="admin-dash-header">
+          <div class="admin-dash-title"><i class="fas fa-user-shield"></i> Dr. Sheetal Talekar – Admin</div>
+          <div class="admin-dash-actions">
+            <button class="btn-logout" onclick="adminLogout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+          </div>
+        </div>
+        <!-- Tabs -->
+        <div class="admin-tabs">
+          <div class="admin-tab active" onclick="switchAdminTab('bookings',this)"><i class="fas fa-calendar-alt"></i> Bookings</div>
+          <div class="admin-tab" onclick="switchAdminTab('calendar',this)"><i class="fas fa-calendar-week"></i> Calendar</div>
+          <div class="admin-tab" onclick="switchAdminTab('reports',this)"><i class="fas fa-chart-bar"></i> Reports</div>
+          <div class="admin-tab" onclick="switchAdminTab('settings',this)"><i class="fas fa-cog"></i> Settings</div>
+        </div>
+
+        <!-- TAB: BOOKINGS -->
+        <div class="admin-panel-content active" id="admin-tab-bookings">
+          <div class="filter-bar">
+            <button class="filter-btn active" onclick="setFilter('all',this)">All</button>
+            <button class="filter-btn" onclick="setFilter('confirmed',this)">Confirmed</button>
+            <button class="filter-btn" onclick="setFilter('completed',this)">Completed</button>
+            <button class="filter-btn" onclick="setFilter('cancelled',this)">Cancelled</button>
+            <button class="filter-btn" onclick="setFilter('today',this)"><i class="fas fa-star"></i> Today</button>
+            <input class="filter-search" id="booking-search" placeholder="Search name / phone / ref…" oninput="renderAdminBookings()">
+            <button class="btn btn-outline btn-sm" onclick="syncFromSheets()" title="Sync from Google Sheets"><i class="fas fa-sync"></i></button>
+          </div>
+          <div class="booking-list" id="admin-booking-list"><p style="color:var(--mid);font-size:.88rem">No bookings yet.</p></div>
+        </div>
+
+        <!-- TAB: CALENDAR -->
+        <div class="admin-panel-content" id="admin-tab-calendar">
+          <p style="font-size:.88rem;color:var(--mid);margin-bottom:16px"><i class="fab fa-google" style="color:#4285F4"></i> Google Calendar shows all appointments in real-time. Configure your Calendar ID in Settings.</p>
+          <div id="admin-gcal-wrap" style="background:var(--bg);border-radius:var(--radius);padding:28px;text-align:center;min-height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center">
+            <i class="fab fa-google" style="font-size:2.5rem;color:#4285F4;margin-bottom:12px;display:block"></i>
+            <p style="font-size:.88rem;color:var(--mid)">Add your <strong>Google Calendar ID</strong> in the Settings tab to see the live calendar here.</p>
+            <button class="btn btn-outline btn-sm" style="margin-top:12px" onclick="switchAdminTab('settings',document.querySelectorAll('.admin-tab')[3])"><i class="fas fa-cog"></i> Go to Settings</button>
+          </div>
+        </div>
+
+        <!-- TAB: REPORTS -->
+        <div class="admin-panel-content" id="admin-tab-reports">
+          <div class="report-stats" id="report-stats"></div>
+          <div class="chart-wrap">
+            <h4><i class="fas fa-chart-bar" style="color:var(--navy);margin-right:6px"></i>Bookings – Last 14 Days</h4>
+            <canvas id="chart-trend" height="140"></canvas>
+          </div>
+          <div class="chart-wrap">
+            <h4><i class="fas fa-chart-pie" style="color:var(--navy);margin-right:6px"></i>Bookings by Service</h4>
+            <canvas id="chart-service" height="200"></canvas>
+          </div>
+          <div class="chart-wrap">
+            <h4><i class="fas fa-calendar-day" style="color:var(--navy);margin-right:6px"></i>Today's Schedule
+              <span id="today-date-label" style="font-weight:400;color:var(--mid);font-size:.8rem;margin-left:8px"></span>
+            </h4>
+            <div class="today-list" id="today-list"></div>
+          </div>
+        </div>
+
+        <!-- TAB: SETTINGS -->
+        <div class="admin-panel-content" id="admin-tab-settings">
+          <div class="setup-badge">Google Calendar</div>
+          <div class="form-group"><label class="form-label">Calendar ID (Gmail address or calendar ID)</label>
+            <input type="text" class="form-input" id="s-cal-id" placeholder="example@gmail.com"></div>
+          <div class="form-group"><label class="form-label">Google Calendar API Key</label>
+            <input type="text" class="form-input" id="s-api-key" placeholder="AIza..."></div>
+          <div class="form-group"><label class="form-label">Google OAuth Client ID</label>
+            <input type="text" class="form-input" id="s-client-id" placeholder="xxxxxx.apps.googleusercontent.com"></div>
+
+          <div class="sheets-badge" style="margin-top:20px"><i class="fas fa-table"></i> Google Sheets (Persistent Storage)</div>
+          <div class="form-group"><label class="form-label">Apps Script Web App URL</label>
+            <input type="text" class="form-input" id="s-sheets-url" placeholder="https://script.google.com/macros/s/YOUR_ID/exec">
+            <p style="font-size:.77rem;color:var(--mid);margin-top:5px">All bookings will be saved to Google Sheets for permanent storage and cross-device access.</p>
+          </div>
+
+          <div class="form-group" style="margin-top:8px"><label class="form-label">Admin Password</label>
+            <input type="password" class="form-input" id="s-new-pw" placeholder="Leave blank to keep current password"></div>
+          <button class="btn btn-primary" onclick="saveSettings()"><i class="fas fa-save"></i> Save Settings</button>
+
+          <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border)">
+            <div class="setup-badge" style="background:rgba(27,79,138,.1);color:var(--navy)">Google Sheets Setup Guide</div>
+            <div class="setup-step">
+              <div class="step-num">1</div>
+              <div class="step-text"><h4>Open Google Sheets</h4><p>Go to <code>sheets.google.com</code>, create a new sheet named <code>Sheetal Clinic Bookings</code>.</p></div>
+            </div>
+            <div class="setup-step">
+              <div class="step-num">2</div>
+              <div class="step-text"><h4>Create Apps Script</h4><p>In the sheet: <code>Extensions → Apps Script</code>. Paste the Apps Script code (see below), click Deploy → New Deployment → Web App → Execute as Me → Anyone.</p></div>
+            </div>
+            <div class="setup-step">
+              <div class="step-num">3</div>
+              <div class="step-text"><h4>Copy the Web App URL</h4><p>After deploying, copy the Web App URL (starts with <code>https://script.google.com/macros/s/…</code>) and paste it above.</p></div>
+            </div>
+            <div class="setup-step">
+              <div class="step-num">4</div>
+              <div class="step-text"><h4>Apps Script Code</h4>
+                <p style="margin-bottom:6px">Copy and paste this into your Apps Script editor:</p>
+                <textarea readonly style="width:100%;height:160px;font-size:.72rem;font-family:monospace;border:1px solid var(--border);border-radius:8px;padding:8px;background:var(--bg);resize:none;color:var(--dark)">const SHEET_NAME = 'Bookings';
+function doPost(e) {
+  const data = JSON.parse(e.postData.contents);
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME)
+    || SpreadsheetApp.getActiveSpreadsheet().insertSheet(SHEET_NAME);
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(['Ref','First','Last','Phone','Email','Age','Gender','Reason','Notes','Date','Slot','Status','Created']);
+  }
+  if (data.action === 'add') {
+    const b = data.booking;
+    sheet.appendRow([b.ref,b.fname,b.lname,b.phone,b.email,b.age||'',b.gender||'',b.reason||'',b.notes||'',b.dateStr,b.slot,b.status,b.createdAt]);
+  } else if (data.action === 'update') {
+    const rows = sheet.getDataRange().getValues();
+    for (let i = 1; i < rows.length; i++) {
+      if (rows[i][0] === data.ref) { sheet.getRange(i+1,12).setValue(data.status); break; }
+    }
+  }
+  return ContentService.createTextOutput(JSON.stringify({ok:true})).setMimeType(ContentService.MimeType.JSON);
+}
+function doGet(e) {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
+  if (!sheet) return ContentService.createTextOutput(JSON.stringify([])).setMimeType(ContentService.MimeType.JSON);
+  const rows = sheet.getDataRange().getValues();
+  const headers = rows[0];
+  const data = rows.slice(1).map(r => Object.fromEntries(headers.map((h,i)=>[h.toLowerCase(),r[i]])));
+  return ContentService.createTextOutput(JSON.stringify(data)).setMimeType(ContentService.MimeType.JSON);
+}</textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- /admin-dashboard -->
+
+    </div><!-- /modal-body -->
+  </div>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+// ─── STATE ───────────────────────────────────────────────
+const STATE = {
+  currentPage:'home',
+  selectedDate:null,
+  selectedSlot:null,
+  weekOffset:0,
+  bookings: JSON.parse(localStorage.getItem('st_bookings')||'[]'),
+  settings: JSON.parse(localStorage.getItem('st_settings')||'{}'),
+  adminLoggedIn:false,
+  chatOpen:false,
+  chatGreeted:false,
+  filter:'all',
+  charts:{}
+};
+const SLOTS=['10:00 AM','10:30 AM','11:00 AM','11:30 AM','12:00 PM','12:30 PM','1:00 PM','1:30 PM','2:00 PM','2:30 PM','3:00 PM','3:30 PM','4:00 PM','4:30 PM','5:00 PM'];
+
+function saveBookings(){localStorage.setItem('st_bookings',JSON.stringify(STATE.bookings));}
+function saveSettings(){
+  const newPw=document.getElementById('s-new-pw').value.trim();
+  const s={
+    calId:document.getElementById('s-cal-id').value.trim(),
+    apiKey:document.getElementById('s-api-key').value.trim(),
+    clientId:document.getElementById('s-client-id').value.trim(),
+    sheetsUrl:document.getElementById('s-sheets-url').value.trim(),
+    pw:newPw||STATE.settings.pw||'admin123'
+  };
+  STATE.settings=s;
+  localStorage.setItem('st_settings',JSON.stringify(s));
+  applyCalendarSettings();
+  notify('Settings saved successfully!','success');
+  document.getElementById('s-new-pw').value='';
+}
+
+// ─── NAVIGATION ───────────────────────────────────────────
+function showPage(name){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a[data-page]').forEach(a=>a.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  const navLink = document.querySelector(`.nav-links a[data-page="${name}"]`);
+  if(navLink) navLink.classList.add('active');
+  STATE.currentPage=name;
+  window.scrollTo({top:0,behavior:'smooth'});
+  document.getElementById('nav-links').classList.remove('open');
+  if(name==='appointment') initAppointmentPage();
+  return false;
+}
+function toggleMenu(){
+  document.getElementById('nav-links').classList.toggle('open');
+}
+window.addEventListener('scroll',()=>{
+  document.getElementById('main-nav').classList.toggle('scrolled',window.scrollY>20);
+});
+
+// ─── APPOINTMENT PAGE ─────────────────────────────────────
+function initAppointmentPage(){
+  renderDatePicker();
+  document.getElementById('booking-summary').classList.remove('show');
+}
+
+function getWeekDates(){
+  const today=new Date();
+  const dates=[];
+  const startOffset = STATE.weekOffset*7;
+  for(let i=0;i<7;i++){
+    const d=new Date(today);
+    d.setDate(today.getDate()+startOffset+i);
+    dates.push(d);
+  }
+  return dates;
+}
+
+function renderDatePicker(){
+  const dates=getWeekDates();
+  const row=document.getElementById('date-picker-row');
+  const today=new Date(); today.setHours(0,0,0,0);
+  const dayNames=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  // Week label
+  const first=dates[0], last=dates[dates.length-1];
+  document.getElementById('week-label').textContent=`${months[first.getMonth()]} ${first.getDate()} – ${months[last.getMonth()]} ${last.getDate()}, ${last.getFullYear()}`;
+
+  row.innerHTML='';
+  dates.forEach(d=>{
+    d.setHours(0,0,0,0);
+    const isPast=d<today;
+    const isSunday=d.getDay()===0;
+    const disabled=isPast||isSunday;
+    const dateStr=formatDate(d);
+    const isSelected=STATE.selectedDate===dateStr;
+    const isToday=d.getTime()===today.getTime();
+    const btn=document.createElement('button');
+    btn.className='date-btn'+(isSelected?' selected':'')+(isToday?' today':'');
+    btn.disabled=disabled;
+    btn.style.opacity=disabled?.4:1;
+    btn.innerHTML=`<div style="font-size:.72rem;color:inherit;opacity:.7">${dayNames[d.getDay()]}</div><div style="font-size:1.1rem;font-weight:700">${d.getDate()}</div><div style="font-size:.7rem;opacity:.7">${months[d.getMonth()]}</div>`;
+    if(!disabled) btn.onclick=()=>selectDate(dateStr,d);
+    row.appendChild(btn);
+  });
+}
+
+function changeWeek(dir){
+  STATE.weekOffset=Math.max(0,STATE.weekOffset+dir);
+  renderDatePicker();
+}
+
+function selectDate(dateStr,dateObj){
+  STATE.selectedDate=dateStr;
+  STATE.selectedSlot=null;
+  document.getElementById('booking-summary').classList.remove('show');
+  const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const months=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  document.getElementById('slots-date-label').textContent=`${days[dateObj.getDay()]}, ${months[dateObj.getMonth()]} ${dateObj.getDate()}`;
+  renderSlots(dateStr);
+  renderDatePicker();
+}
+
+function renderSlots(dateStr){
+  const grid=document.getElementById('slots-grid');
+  grid.innerHTML='';
+  SLOTS.forEach(slot=>{
+    const key=`${dateStr}_${slot}`;
+    const booking=STATE.bookings.find(b=>b.dateStr===dateStr&&b.slot===slot&&b.status!=='cancelled');
+    const btn=document.createElement('button');
+    btn.className='slot-btn '+(booking?'booked':'available');
+    btn.textContent=slot;
+    btn.disabled=!!booking;
+    if(!booking) btn.onclick=()=>selectSlot(slot,btn);
+    grid.appendChild(btn);
+  });
+}
+
+function selectSlot(slot,btn){
+  document.querySelectorAll('.slot-btn').forEach(b=>b.classList.remove('selected'));
+  btn.classList.add('selected');
+  STATE.selectedSlot=slot;
+  // Update summary
+  const sumDate=document.getElementById('sum-date');
+  const sumTime=document.getElementById('sum-time');
+  sumDate.textContent=STATE.selectedDate||'—';
+  sumTime.textContent=slot;
+  document.getElementById('booking-summary').classList.add('show');
+}
+
+function formatDate(d){
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function generateRef(dateStr,slot){
+  const s=slot.replace(':','').replace(' ','');
+  return `ST-${dateStr.replace(/-/g,'')}-${s}`;
+}
+
+function submitBooking(e){
+  e.preventDefault();
+  if(!STATE.selectedDate){notify('Please select a date first.','error');return}
+  if(!STATE.selectedSlot){notify('Please select a time slot.','error');return}
+  const fname=document.getElementById('f-fname').value.trim();
+  const lname=document.getElementById('f-lname').value.trim();
+  const phone=document.getElementById('f-phone').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const ref=generateRef(STATE.selectedDate,STATE.selectedSlot);
+  const booking={
+    ref,fname,lname,phone,email,
+    age:document.getElementById('f-age').value,
+    gender:document.getElementById('f-gender').value,
+    reason:document.getElementById('f-reason').value,
+    notes:document.getElementById('f-notes').value,
+    dateStr:STATE.selectedDate,
+    slot:STATE.selectedSlot,
+    status:'confirmed',
+    createdAt:new Date().toISOString()
+  };
+  STATE.bookings.push(booking);
+  saveBookings();
+  createGCalEvent(booking);
+  pushToSheets(booking);
+  renderSlots(STATE.selectedDate);
+  document.getElementById('booking-form').reset();
+  STATE.selectedSlot=null;
+  document.getElementById('booking-summary').classList.remove('show');
+  document.querySelectorAll('.slot-btn').forEach(b=>b.classList.remove('selected'));
+  notify(`✅ Appointment confirmed! Reference: ${ref} — please save this for cancellation.`,'success');
+}
+
+function cancelBooking(){
+  const email=document.getElementById('cancel-email').value.trim().toLowerCase();
+  const ref=document.getElementById('cancel-ref').value.trim();
+  if(!email||!ref){notify('Please enter both email and booking reference.','error');return}
+  const idx=STATE.bookings.findIndex(b=>b.email.toLowerCase()===email&&b.ref===ref&&b.status!=='cancelled');
+  if(idx===-1){notify('No active booking found with those details.','error');return}
+  STATE.bookings[idx].status='cancelled';
+  saveBookings();
+  deleteGCalEvent(STATE.bookings[idx]);
+  pushStatusToSheets(ref,'cancelled');
+  if(STATE.selectedDate) renderSlots(STATE.selectedDate);
+  document.getElementById('cancel-email').value='';
+  document.getElementById('cancel-ref').value='';
+  notify('Your appointment has been cancelled successfully.','success');
+}
+
+// ─── GOOGLE CALENDAR ─────────────────────────────────────
+function applyCalendarSettings(){
+  const s=STATE.settings;
+  if(!s.calId) return;
+  const iframeSrc=`https://calendar.google.com/calendar/embed?src=${encodeURIComponent(s.calId)}&ctz=Asia%2FKolkata&mode=WEEK&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0`;
+  const adminWrap=document.getElementById('admin-gcal-wrap');
+  if(adminWrap){
+    adminWrap.innerHTML=`<iframe src="${iframeSrc}" style="width:100%;height:320px;border:none;border-radius:12px" frameborder="0"></iframe>`;
+  }
+  document.getElementById('gcal-embed-wrap').classList.add('hidden');
+  document.getElementById('gcal-iframe-wrap').classList.remove('hidden');
+  document.getElementById('gcal-iframe').src=iframeSrc;
+}
+
+function createGCalEvent(b){
+  // In production: call Google Calendar API to create event
+  // Using gapi.client.calendar.events.insert(...)
+  const s=STATE.settings;
+  if(!s.apiKey||!s.calId){
+    console.log('GCal not configured – booking stored locally only.');
+    return;
+  }
+  const [year,month,day]=b.dateStr.split('-').map(Number);
+  const [timePart,meridian]=b.slot.split(' ');
+  let [h,m]=timePart.split(':').map(Number);
+  if(meridian==='PM'&&h!==12) h+=12;
+  if(meridian==='AM'&&h===12) h=0;
+  const start=new Date(year,month-1,day,h,m);
+  const end=new Date(start.getTime()+30*60000);
+  const event={
+    summary:`Appt: ${b.fname} ${b.lname} – ${b.reason||'Consultation'}`,
+    description:`Patient: ${b.fname} ${b.lname}\nPhone: ${b.phone}\nEmail: ${b.email}\nAge: ${b.age||'N/A'} | Gender: ${b.gender||'N/A'}\nNotes: ${b.notes||'None'}\nRef: ${b.ref}`,
+    start:{dateTime:start.toISOString(),timeZone:'Asia/Kolkata'},
+    end:{dateTime:end.toISOString(),timeZone:'Asia/Kolkata'},
+    colorId:'7'
+  };
+  fetch(`https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(s.calId)}/events?key=${s.apiKey}`,{
+    method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${s.oauthToken||''}`},
+    body:JSON.stringify(event)
+  }).then(r=>r.json()).then(ev=>{
+    if(ev.id){
+      const idx=STATE.bookings.findIndex(bk=>bk.ref===b.ref);
+      if(idx>-1){STATE.bookings[idx].gcalId=ev.id; saveBookings();}
+    }
+  }).catch(err=>console.warn('GCal event creation failed:',err));
+}
+
+function deleteGCalEvent(b){
+  const s=STATE.settings;
+  if(!s.apiKey||!s.calId||!b.gcalId) return;
+  fetch(`https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(s.calId)}/events/${b.gcalId}?key=${s.apiKey}`,{
+    method:'DELETE',headers:{Authorization:`Bearer ${s.oauthToken||''}`}
+  }).catch(err=>console.warn('GCal delete failed:',err));
+}
+
+// ─── ADMIN PANEL ─────────────────────────────────────────
+function openAdmin(){
+  document.getElementById('admin-modal').classList.add('open');
+  if(STATE.adminLoggedIn) showAdminDashboard();
+  else{
+    document.getElementById('admin-login').style.display='block';
+    document.getElementById('admin-dashboard').style.display='none';
+    setTimeout(()=>document.getElementById('admin-pw').focus(),100);
+  }
+}
+function closeAdmin(){document.getElementById('admin-modal').classList.remove('open');}
+function adminLogin(){
+  const pw=document.getElementById('admin-pw').value;
+  const correct=STATE.settings.pw||'admin123';
+  if(pw===correct){
+    STATE.adminLoggedIn=true;
+    document.getElementById('admin-pw').value='';
+    showAdminDashboard();
+  }else{
+    notify('Incorrect password — please try again.','error');
+    document.getElementById('admin-pw').select();
+  }
+}
+function adminLogout(){
+  STATE.adminLoggedIn=false;
+  document.getElementById('admin-dashboard').style.display='none';
+  document.getElementById('admin-login').style.display='block';
+  document.getElementById('admin-pw').value='';
+  notify('Logged out successfully.','info');
+}
+function showAdminDashboard(){
+  document.getElementById('admin-login').style.display='none';
+  document.getElementById('admin-dashboard').style.display='block';
+  const s=STATE.settings;
+  if(s.calId) document.getElementById('s-cal-id').value=s.calId;
+  if(s.apiKey) document.getElementById('s-api-key').value=s.apiKey;
+  if(s.clientId) document.getElementById('s-client-id').value=s.clientId;
+  if(s.sheetsUrl) document.getElementById('s-sheets-url').value=s.sheetsUrl;
+  // Set active tab to Bookings
+  document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.admin-panel-content').forEach(c=>c.classList.remove('active'));
+  document.querySelectorAll('.admin-tab')[0].classList.add('active');
+  document.getElementById('admin-tab-bookings').classList.add('active');
+  STATE.filter='all';
+  renderAdminBookings();
+  applyCalendarSettings();
+}
+function switchAdminTab(tab,el){
+  document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.admin-panel-content').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('admin-tab-'+tab).classList.add('active');
+  if(tab==='bookings') renderAdminBookings();
+  if(tab==='reports') renderReports();
+}
+function setFilter(f,el){
+  STATE.filter=f;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  renderAdminBookings();
+}
+function renderAdminBookings(){
+  const list=document.getElementById('admin-booking-list');
+  const search=(document.getElementById('booking-search')?.value||'').toLowerCase();
+  const today=formatDate(new Date());
+  let items=[...STATE.bookings].sort((a,b)=>{
+    const da=a.dateStr+a.slot, db=b.dateStr+b.slot;
+    return da<db?-1:da>db?1:0;
+  });
+  // Apply filter
+  if(STATE.filter==='confirmed') items=items.filter(b=>b.status==='confirmed');
+  else if(STATE.filter==='cancelled') items=items.filter(b=>b.status==='cancelled');
+  else if(STATE.filter==='completed') items=items.filter(b=>b.status==='completed');
+  else if(STATE.filter==='today') items=items.filter(b=>b.dateStr===today&&b.status!=='cancelled');
+  // Apply search
+  if(search) items=items.filter(b=>`${b.fname} ${b.lname} ${b.phone} ${b.ref} ${b.email}`.toLowerCase().includes(search));
+  if(!items.length){list.innerHTML='<p style="color:var(--mid);font-size:.88rem;padding:20px 0"><i class="fas fa-inbox" style="margin-right:6px"></i>No bookings found.</p>';return;}
+  const statusColors={confirmed:'',completed:'border-left-color:var(--success)',cancelled:'border-left-color:var(--danger);opacity:.65'};
+  const badgeClass={confirmed:'',completed:'completed',cancelled:'cancelled'};
+  const badgeLabel={confirmed:'Confirmed',completed:'Completed',cancelled:'Cancelled'};
+  list.innerHTML=items.map(b=>`
+    <div class="booking-item" style="${statusColors[b.status]||''}">
+      <div class="booking-item-header">
+        <div class="booking-item-name"><i class="fas fa-user" style="color:var(--navy);margin-right:6px;font-size:.8rem"></i>${b.fname} ${b.lname}</div>
+        <div class="booking-item-badge ${badgeClass[b.status]||''}">${badgeLabel[b.status]||b.status}</div>
+      </div>
+      <div class="booking-item-detail">
+        <span><i class="fas fa-calendar-day"></i> ${b.dateStr}</span>
+        <span><i class="fas fa-clock"></i> ${b.slot}</span>
+        <span><i class="fas fa-stethoscope"></i> ${b.reason||'General'}</span>
+        <span><i class="fas fa-phone"></i> ${b.phone}</span>
+        <span><i class="fas fa-venus-mars"></i> ${b.gender||'—'} ${b.age?'· Age '+b.age:''}</span>
+      </div>
+      ${b.notes?`<div style="font-size:.8rem;color:var(--mid);margin-top:6px;font-style:italic"><i class="fas fa-comment"></i> ${b.notes}</div>`:''}
+      <div style="font-size:.75rem;color:var(--light);margin-top:4px">Ref: <strong>${b.ref}</strong> &nbsp;·&nbsp; Email: ${b.email}</div>
+      ${b.status!=='cancelled'?`<div class="booking-actions">
+        ${b.status!=='completed'?`<button class="bk-btn bk-btn-done" onclick="adminUpdateStatus('${b.ref}','completed')"><i class="fas fa-check"></i> Mark Done</button>`:''}
+        <button class="bk-btn bk-btn-cancel" onclick="adminUpdateStatus('${b.ref}','cancelled')"><i class="fas fa-times"></i> Cancel</button>
+        <a class="bk-btn bk-btn-call" href="tel:${b.phone}"><i class="fas fa-phone"></i> Call</a>
+        <a class="bk-btn bk-btn-call" href="mailto:${b.email}?subject=Appointment Reminder – Sheetal Clinic&body=Dear ${b.fname}, this is a reminder for your appointment on ${b.dateStr} at ${b.slot} at Sheetal Clinic."><i class="fas fa-envelope"></i> Email</a>
+      </div>`:''}
+    </div>
+  `).join('');
+}
+function adminUpdateStatus(ref,newStatus){
+  const idx=STATE.bookings.findIndex(b=>b.ref===ref);
+  if(idx===-1) return;
+  STATE.bookings[idx].status=newStatus;
+  saveBookings();
+  if(newStatus==='cancelled') deleteGCalEvent(STATE.bookings[idx]);
+  pushStatusToSheets(ref,newStatus);
+  renderAdminBookings();
+  if(STATE.selectedDate) renderSlots(STATE.selectedDate);
+  notify(`Booking ${ref} marked as ${newStatus}.`, newStatus==='cancelled'?'error':'success');
+}
+
+// ─── GOOGLE SHEETS ────────────────────────────────────────
+async function pushToSheets(booking){
+  const url=STATE.settings.sheetsUrl;
+  if(!url) return;
+  try{
+    await fetch(url,{method:'POST',body:JSON.stringify({action:'add',booking}),headers:{'Content-Type':'text/plain'}});
+  }catch(e){console.warn('Sheets push failed:',e);}
+}
+async function pushStatusToSheets(ref,status){
+  const url=STATE.settings.sheetsUrl;
+  if(!url) return;
+  try{
+    await fetch(url,{method:'POST',body:JSON.stringify({action:'update',ref,status}),headers:{'Content-Type':'text/plain'}});
+  }catch(e){console.warn('Sheets update failed:',e);}
+}
+async function syncFromSheets(){
+  const url=STATE.settings.sheetsUrl;
+  if(!url){notify('Google Sheets URL not configured. Go to Settings.','error');return;}
+  notify('Syncing from Google Sheets…','info');
+  try{
+    const r=await fetch(url+'?action=get');
+    const rows=await r.json();
+    if(!Array.isArray(rows)||!rows.length){notify('No data found in Google Sheets.','info');return;}
+    // Merge: remote rows override local by ref
+    const remote=rows.map(r=>({
+      ref:r.ref,fname:r.first,lname:r.last,phone:r.phone,email:r.email,
+      age:r.age,gender:r.gender,reason:r.reason,notes:r.notes,
+      dateStr:r.date,slot:r.slot,status:r.status,createdAt:r.created
+    }));
+    remote.forEach(rb=>{
+      const idx=STATE.bookings.findIndex(b=>b.ref===rb.ref);
+      if(idx===-1) STATE.bookings.push(rb);
+      else STATE.bookings[idx]=rb;
+    });
+    saveBookings();
+    renderAdminBookings();
+    notify(`Synced ${remote.length} records from Google Sheets.`,'success');
+  }catch(e){notify('Sync failed – check the Apps Script URL.','error');console.error(e);}
+}
+
+// ─── REPORTS ──────────────────────────────────────────────
+function renderReports(){
+  const all=STATE.bookings;
+  const confirmed=all.filter(b=>b.status==='confirmed');
+  const completed=all.filter(b=>b.status==='completed');
+  const cancelled=all.filter(b=>b.status==='cancelled');
+  const today=formatDate(new Date());
+  const todayActive=all.filter(b=>b.dateStr===today&&b.status!=='cancelled');
+
+  // Stat cards
+  document.getElementById('report-stats').innerHTML=`
+    <div class="report-stat-card"><div class="report-stat-num">${all.length}</div><div class="report-stat-label">Total Bookings</div></div>
+    <div class="report-stat-card gold"><div class="report-stat-num">${todayActive.length}</div><div class="report-stat-label">Today's Appointments</div></div>
+    <div class="report-stat-card green"><div class="report-stat-num">${confirmed.length+completed.length}</div><div class="report-stat-label">Active / Completed</div></div>
+    <div class="report-stat-card red"><div class="report-stat-num">${cancelled.length}</div><div class="report-stat-label">Cancelled</div></div>
+  `;
+
+  // Today's schedule
+  const tl=document.getElementById('today-list');
+  document.getElementById('today-date-label').textContent='— '+new Date().toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long'});
+  if(!todayActive.length){tl.innerHTML='<p style="color:var(--mid);font-size:.85rem;padding:12px 0"><i class="fas fa-sun" style="margin-right:6px"></i>No appointments scheduled today.</p>';}
+  else{
+    const sorted=todayActive.sort((a,b)=>SLOTS.indexOf(a.slot)-SLOTS.indexOf(b.slot));
+    tl.innerHTML=sorted.map(b=>`
+      <div class="today-item">
+        <span class="today-time">${b.slot}</span>
+        <span class="today-name">${b.fname} ${b.lname}</span>
+        <span class="today-reason">${b.reason||'General'}</span>
+        <a href="tel:${b.phone}" style="color:var(--navy);font-size:.8rem"><i class="fas fa-phone"></i></a>
+      </div>`).join('');
+  }
+
+  // Trend chart (last 14 days)
+  const trendLabels=[],trendData=[];
+  for(let i=13;i>=0;i--){
+    const d=new Date(); d.setDate(d.getDate()-i);
+    const ds=formatDate(d);
+    trendLabels.push(d.toLocaleDateString('en-IN',{day:'numeric',month:'short'}));
+    trendData.push(all.filter(b=>b.dateStr===ds&&b.status!=='cancelled').length);
+  }
+  const tCtx=document.getElementById('chart-trend').getContext('2d');
+  if(STATE.charts.trend) STATE.charts.trend.destroy();
+  STATE.charts.trend=new Chart(tCtx,{
+    type:'bar',
+    data:{labels:trendLabels,datasets:[{label:'Appointments',data:trendData,backgroundColor:'rgba(27,79,138,.7)',borderRadius:6,borderSkipped:false}]},
+    options:{responsive:true,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,ticks:{stepSize:1},grid:{color:'rgba(0,0,0,.05)'}},x:{grid:{display:false}}}}
+  });
+
+  // Service pie chart
+  const reasonMap={};
+  all.filter(b=>b.status!=='cancelled').forEach(b=>{
+    const r=b.reason||'General Consultation';
+    reasonMap[r]=(reasonMap[r]||0)+1;
+  });
+  const pieColors=['#1B4F8A','#E8941A','#4ECDC4','#E74C3C','#8B5CF6','#27AE60','#F59E0B','#EC4899','#0EA5E9'];
+  const sCtx=document.getElementById('chart-service').getContext('2d');
+  if(STATE.charts.service) STATE.charts.service.destroy();
+  const serviceLabels=Object.keys(reasonMap);
+  if(!serviceLabels.length){document.getElementById('chart-service').parentElement.style.display='none';}
+  else{
+    document.getElementById('chart-service').parentElement.style.display='';
+    STATE.charts.service=new Chart(sCtx,{
+      type:'doughnut',
+      data:{labels:serviceLabels,datasets:[{data:Object.values(reasonMap),backgroundColor:pieColors,borderWidth:2,borderColor:'#fff'}]},
+      options:{responsive:true,plugins:{legend:{position:'right',labels:{font:{size:11},boxWidth:14}}}}
+    });
+  }
+}
+
+// ─── CHATBOT ─────────────────────────────────────────────
+const BOT_RESPONSES=[
+  {keywords:['appointment','book','slot','schedule','visit'],reply:"You can book an appointment on our <b>Appointment page</b>. Slots are available Mon–Sat from <b>10 AM to 5 PM</b>. Would you like me to take you there?",action:()=>setTimeout(()=>showPage('appointment'),800)},
+  {keywords:['timing','hours','time','open','availability','available'],reply:"Dr. Talekar is available <b>Monday to Friday: 10 AM – 5 PM</b> and <b>Saturday: 10 AM – 2 PM</b>. Sunday is emergency-only."},
+  {keywords:['service','treat','speciali','offer','provide'],reply:"Dr. Talekar offers a wide range of services including <b>Prenatal Care, Normal & C-Section Delivery, Laparoscopy, PCOS Treatment, Infertility Consultation, Menopause Management</b>, and more. Shall I show you all services?",action:()=>setTimeout(()=>showPage('services'),800)},
+  {keywords:['pcos','polycystic','hormone','irregular period'],reply:"Dr. Talekar specialises in PCOS management including hormonal evaluation, lifestyle intervention, and medical therapy. <a href='#' onclick='showPage(\"appointment\")' style='color:var(--navy)'>Book a consultation</a> today."},
+  {keywords:['pregnant','pregnancy','prenatal','antenatal','delivery'],reply:"Dr. Talekar provides comprehensive pregnancy care from first trimester to delivery, including high-risk pregnancy management. <a href='#' onclick='showPage(\"appointment\")' style='color:var(--navy)'>Schedule your antenatal visit →</a>"},
+  {keywords:['contact','address','location','where','direction','phone','call'],reply:"The clinic is located at <b>Sheetal Clinic, Gunjan, Vapi, Gujarat</b>. Phone: <b>+91 76000 00000</b>. <a href='#' onclick='showPage(\"contact\")' style='color:var(--navy)'>View full contact details →</a>"},
+  {keywords:['fee','charge','cost','price','consultation'],reply:"Consultation fees vary by type of visit. Please <a href='#' onclick='showPage(\"contact\")' style='color:var(--navy)'>contact us directly</a> or call <b>+91 76000 00000</b> for fee details."},
+  {keywords:['cancel','cancellation','reschedule'],reply:"To cancel an appointment, visit the <b>Appointment page</b> and use the <b>Cancel Your Booking</b> section. You'll need your registered email and booking reference number."},
+  {keywords:['emergency','urgent','serious'],reply:"For medical emergencies, please call us immediately at <b>+91 76000 00000</b> or visit the nearest emergency room. Our Sunday service is available for urgent cases."},
+  {keywords:['laparoscop','surgery','operation','fibroid','cyst','endometriosis'],reply:"Dr. Talekar performs minimally invasive <b>laparoscopic surgery</b> for fibroids, ovarian cysts, endometriosis, and more — faster recovery with minimal scarring. <a href='#' onclick='showPage(\"appointment\")' style='color:var(--navy)'>Book a surgical consultation →</a>"},
+  {keywords:['infertility','fertility','conceive','ivf'],reply:"Dr. Talekar offers <b>infertility workup, ovulation induction</b>, and medical management for fertility issues. She recommends early evaluation for better outcomes. <a href='#' onclick='showPage(\"appointment\")' style='color:var(--navy)'>Book a fertility consultation →</a>"},
+  {keywords:['about','qualif','degree','experience','background'],reply:"Dr. Sheetal Talekar holds <b>MBBS, DGO, DNB (Obstetrics & Gynaecology)</b> with over <b>15 years</b> of clinical experience and 8,000+ patients treated. <a href='#' onclick='showPage(\"about\")' style='color:var(--navy)'>Read her full profile →</a>"},
+  {keywords:['hello','hi','hey','namaste','good'],reply:"Hello! 👋 I'm the Clinic Assistant for Dr. Sheetal Talekar's clinic. I can help you with <b>appointments, services, timings,</b> or <b>general queries</b>. What can I assist you with?"},
+  {keywords:['thanks','thank','great','good','helpful','nice'],reply:"You're welcome! Is there anything else I can help you with? 😊"},
+  {keywords:['bye','goodbye','exit','close'],reply:"Goodbye! Take care and stay healthy. If you need anything, we're always here. 💙"},
+];
+
+function toggleChatbot(){
+  STATE.chatOpen=!STATE.chatOpen;
+  const win=document.getElementById('chatbot-window');
+  win.classList.toggle('open',STATE.chatOpen);
+  if(STATE.chatOpen&&!STATE.chatGreeted){
+    STATE.chatGreeted=true;
+    const body=document.getElementById('chatbot-body');
+    body.innerHTML='';
+    appendBotMsg("May I help you? 😊 I'm the virtual assistant for <b>Dr. Sheetal Talekar's Clinic</b>. Ask me about appointments, services, timings, or anything else!");
+    setTimeout(()=>{
+      appendQuickBtns(['Book Appointment','Our Services','Clinic Timings','Contact Us','About Doctor']);
+    },600);
+  }
+}
+
+function appendBotMsg(html){
+  const body=document.getElementById('chatbot-body');
+  const div=document.createElement('div');
+  div.className='chat-msg bot';
+  div.innerHTML=html;
+  body.appendChild(div);
+  body.scrollTop=body.scrollHeight;
+}
+function appendUserMsg(text){
+  const body=document.getElementById('chatbot-body');
+  const div=document.createElement('div');
+  div.className='chat-msg user';
+  div.textContent=text;
+  body.appendChild(div);
+  body.scrollTop=body.scrollHeight;
+}
+function appendQuickBtns(options){
+  const body=document.getElementById('chatbot-body');
+  const row=document.createElement('div');
+  row.className='chat-quick-btns';
+  options.forEach(opt=>{
+    const btn=document.createElement('button');
+    btn.className='chat-quick-btn';
+    btn.textContent=opt;
+    btn.onclick=()=>{
+      row.remove();
+      appendUserMsg(opt);
+      setTimeout(()=>processChat(opt.toLowerCase()),400);
+    };
+    row.appendChild(btn);
+  });
+  body.appendChild(row);
+  body.scrollTop=body.scrollHeight;
+}
+
+function sendChat(){
+  const input=document.getElementById('chatbot-input');
+  const text=input.value.trim();
+  if(!text) return;
+  input.value='';
+  appendUserMsg(text);
+  setTimeout(()=>processChat(text.toLowerCase()),500);
+}
+
+function processChat(text){
+  const match=BOT_RESPONSES.find(r=>r.keywords.some(k=>text.includes(k)));
+  if(match){
+    appendBotMsg(match.reply);
+    if(match.action) match.action();
+  } else {
+    appendBotMsg("I'm not sure I understood that. Let me suggest some common questions:");
+    setTimeout(()=>appendQuickBtns(['Book Appointment','Our Services','Clinic Timings','Contact Us']),400);
+  }
+}
+
+// ─── CONTACT FORM ─────────────────────────────────────────
+function submitContact(e){
+  e.preventDefault();
+  notify('Thank you for your message! We will get back to you shortly.','success');
+  e.target.reset();
+}
+
+// ─── NOTIFICATIONS ────────────────────────────────────────
+function notify(msg,type='success'){
+  const el=document.createElement('div');
+  el.className=`notif ${type}`;
+  const icon=type==='success'?'fa-check-circle':type==='error'?'fa-times-circle':'fa-info-circle';
+  const color=type==='success'?'var(--success)':type==='error'?'var(--danger)':'var(--navy)';
+  el.innerHTML=`<i class="fas ${icon}" style="color:${color};font-size:1.1rem"></i><span>${msg}</span>`;
+  document.body.appendChild(el);
+  setTimeout(()=>{el.style.opacity='0';el.style.transform='translateX(40px)';setTimeout(()=>el.remove(),400)},4000);
+}
+
+// ─── HELPERS ──────────────────────────────────────────────
+function openSetup(){openAdmin();}
+
+// ─── INIT ─────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded',()=>{
+  applyCalendarSettings();
+  // Close modal on Escape key
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape') closeAdmin();
+  });
+  // Admin FAB shows lock/unlock icon based on login state
+  setInterval(()=>{
+    const fab=document.querySelector('.admin-fab');
+    if(fab) fab.innerHTML=`<i class="fas fa-${STATE.adminLoggedIn?'unlock':'lock'}"></i> Admin`;
+  },1000);
+});
+</script>
+</body>
+</html>
